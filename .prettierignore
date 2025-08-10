@@ -1,0 +1,26 @@
+# Зависимости
+node_modules
+package-lock.json
+yarn.lock
+
+# Сборка
+build
+dist
+.next
+out
+
+# Логи
+*.log
+
+# Кэш
+.cache
+.parcel-cache
+
+# Файлы среды
+.env
+.env.local
+.env.production
+
+# Конфигурационные файлы
+*.config.js
+*.config.ts

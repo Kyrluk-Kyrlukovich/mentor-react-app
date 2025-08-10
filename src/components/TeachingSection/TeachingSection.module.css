@@ -1,0 +1,67 @@
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #333;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #1a1a1a;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 1rem;
+}
+
+.item {
+    background: #fafafa;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 1.25rem 1rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    transition: box-shadow .2s, transform .2s;
+}
+
+.item:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transform: translateY(-2px);
+}
+
+.itemTitle {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin: 0 0 .5rem;
+    color: #222;
+}
+
+.itemDesc {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0;
+    color: #555;
+}
+
+@media (max-width: 600px) {
+    .item {
+        flex-direction: column;
+        gap: .75rem;
+        padding: 1rem;
+    }
+    .itemTitle {
+        font-size: 1.125rem;
+    }
+    .itemDesc {
+        font-size: .9rem;
+    }
+}
