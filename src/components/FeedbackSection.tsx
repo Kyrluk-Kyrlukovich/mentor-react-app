@@ -1,11 +1,10 @@
 import {
-    ChangeEvent,
     ChangeEventHandler,
     KeyboardEvent,
     useRef,
     useState,
 } from 'react';
-import Button from './Button/Button.tsx';
+import Button from './Button/Button';
 
 import React from 'react';
 

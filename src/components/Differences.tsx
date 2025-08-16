@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Button from './Button/Button.tsx';
+import Button from './Button/Button';
 import { differences } from '../data.js';
 
 type DifferencesType = keyof typeof differences;

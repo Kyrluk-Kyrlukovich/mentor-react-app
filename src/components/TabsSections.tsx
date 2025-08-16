@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from './Button/Button.tsx';
+import Button from './Button/Button';
 import { MainTabType } from '@/types';
 
 interface Props {

@@ -1,14 +1,13 @@
-import Header from './components/Header/Header.tsx';
-import TeachingSection from './components/TeachingSection/TeachingSection.tsx';
-import Differences from './components/Differences.tsx';
-import IntroSection from './components/IntroSection.tsx';
-import TabsSections from './components/TabsSections.tsx';
+import Header from './components/Header/Header';
+import IntroSection from './components/IntroSection';
+import TabsSections from './components/TabsSections';
 import { useState } from 'react';
-import FeedbackSection from './components/FeedbackSection.tsx';
-import EffectSections from './components/EffectSections.tsx';
+import FeedbackSection from './components/FeedbackSection';
+import EffectSections from './components/EffectSections';
 
 import React from 'react';
 import { MainTabType } from '@/types';
+import { MainPage } from './pages/MainPage';
 
 const App: React.FC = () => {
     const [tab, setTab] = useState<MainTabType>('feedback');
@@ -22,12 +21,7 @@ const App: React.FC = () => {
                     onChange={value => setTab(value)}
                 />
                 {tab === 'feedback' && <FeedbackSection />}
-                {tab === 'main' && (
-                    <>
-                        <TeachingSection />
-                        <Differences />
-                    </>
-                )}
+                {tab === 'main' && <MainPage />}
                 {tab === 'effect' && (
                     <>
                         <EffectSections />

@@ -1,4 +1,5 @@
 export interface Way {
+    id: number;
     title: string;
     description: string;
 }
@@ -35,7 +36,16 @@ export type User = {
     };
 };
 
-export interface ApiResponse<T> {
-    data?: T;
-    error?: string;
+export type Comment = {
+    postId: number;
+    id: number;
+    name: string;
+    email: string;
+    body: string;
+};
+
+export interface Pagination {
+    page: number;
+    limit: number;
+    total: number;
 }
